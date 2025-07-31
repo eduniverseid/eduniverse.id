@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Login and Regist</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="tab-buttons">
+        <button
+          id="btnLogin"
+          class="active"
+          onclick="event.preventDefault(); showfroom('login')"
+        >
+          Login
+        </button>
+        <button
+          id="btnRegister"
+          onclick="event.preventDefault(); showForm('register')"
+        >
+          Daftar
+        </button>
+      </div>
+      <form id="loginForm" class="active">
+        <input type="email" placeholder="Masukkan Email" required />
+        <input type="password" placeholder="Masukkan Password" required />
+        <a href="#">Lupa Password?</a>
+        <button class="submit" type="submit">Login</button>
+        <p>
+          Belum punya akun?
+          <a href="#" onclick="showForm('register')">Daftar</a>
+        </p>
+      </form>
+      <form id="registerForm">
+        <input type="text" placeholder="Nama Lengkap" required />
+        <input type="email" placeholder="Masukan Email" required />
+        <input type="password" placeholder="Masukan Password" required />
+        <input type="text" placeholder="Masukan Asal Instansi" required />
+        <select required>
+          <option value="" disabled selected>Pilih peran</option>
+          <option value="siswa">Siswa</option>
+          <option value="guru">Guru</option>
+        </select>
+        <button class="submit" type="submit">Daftar</button>
+        <p>
+          Sudah punya akun?<a href="#" onclick="showForm('login')">Login</a>
+        </p>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

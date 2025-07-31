@@ -1,0 +1,223 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+/*navindex*/
+.navindex {
+  background-color: #14056e;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border-style: ridge;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+}
+.navindex p {
+  color: white;
+  display: block;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.navindex a {
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  margin-right: 25px;
+}
+.navindex a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border-style: groove;
+  border-radius: 6px;
+  padding: 5px;
+}
+.imgwajib {
+  list-style-type: none;
+  margin-left: 25px;
+}
+.li-imgwajib {
+  font-size: large;
+  list-style: none;
+  display: table-cell;
+  background-color: white;
+  padding: 5px;
+}
+.li-imgwajib img {
+  width: 50px;
+  height: auto;
+}
+/*base page*/
+.container {
+  border-width: 3px;
+  width: 75%;
+  height: auto;
+  max-width: 90vw;
+  margin: 25px;
+  padding: 30px 10px;
+  text-align: center;
+}
+.container h1 {
+  font-size: 3em;
+  word-spacing: 1.5;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+.container h3 {
+  font-size: 1.5em;
+  word-spacing: 1.5;
+  margin-bottom: 15px;
+}
+.container h2 {
+  font-size: 2em;
+  word-spacing: 1.5;
+  margin-bottom: 15px;
+}
+.container p {
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 1.5;
+}
+/*page 1 index*/
+.latar1 {
+  width: 100%;
+  height: auto;
+}
+.ul-isiweb {
+  list-style-type: none;
+  padding: 10px;
+}
+.li-isiweb {
+  display: inline-block;
+  border-style: groove;
+  border-color: #14056e;
+  min-height: 150px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 10px;
+  margin: 10px;
+}
+.li-isiweb img {
+  width: 200px;
+}
+.li-isiweb p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1;
+}
+.li-isiweb a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+.go {
+  padding: 15px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+  border-color: #14056e;
+  background-color: #462980;
+  width: 35%;
+  display: inline-block;
+}
+.go h3 {
+  color: white;
+}
+.go a:link,
+a:visited,
+a:hover,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+/*masuk*/
+.box {
+  width: 320px;
+  position: relative;
+  background-color: #14056e;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.tab-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background-color: aliceblue;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+}
+.tab-buttons .active {
+  background: aliceblue;
+}
+form {
+  display: none;
+  flex-direction: column;
+}
+form.active {
+  display: flex;
+}
+input,
+select {
+  margin: 8px;
+  padding: 10px;
+  border: 1px solid aliceblue;
+  border-radius: 8px;
+}
+button.submit {
+  margin-top: 10px;
+  padding: 10px;
+  background: aliceblue;
+  color: #14056e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.box a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.box p {
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+/*page prt 1*/
+.pembuka {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* opsional */
+  display: block;
+}
